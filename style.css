@@ -220,7 +220,8 @@ p a{
 #alertError,
 #alertValida,
 #alertPerdiste,
-#alertGanaste{
+#alertGanaste,
+#alertReglas{
     display: none;
 }
 
@@ -228,7 +229,7 @@ p a{
     width: 425px;
     background: #f7f7f7;
     margin: auto;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
