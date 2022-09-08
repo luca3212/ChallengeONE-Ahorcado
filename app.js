@@ -2,6 +2,18 @@ const sectionMenuPrincipal = document.querySelector("#pantallaPrincipal");
 const sectionAgregar = document.querySelector("#pantallaAgregar");
 const sectionJuego = document.querySelector("#pantallaJuego");
 
+//Alertas
+const modalAlertas = document.querySelector("#modalAlertas");
+const alertaError = document.querySelector("#alertError");
+const alertaValida = document.querySelector("#alertValida");
+const alertaPerdiste = document.querySelector("#alertPerdiste");
+const alertGanaste = document.querySelector("#alertGanaste");
+
+const alertReglas = document.querySelector("#alertReglas");
+
+const mostrarPalabraCorrecta = document.querySelector("#palabraCorrecta");
+const mostrarPalabra = document.querySelector("#mostrarResultado");
+
 function mostrarSection(section) {
   switch (section) {
     case "MenuPrincipal": {
@@ -96,18 +108,6 @@ function generarLineas() {
       `;
   }
 }
-
-//Alertas
-const modalAlertas = document.querySelector("#modalAlertas");
-const alertaError = document.querySelector("#alertError");
-const alertaValida = document.querySelector("#alertValida");
-const alertaPerdiste = document.querySelector("#alertPerdiste");
-const alertGanaste = document.querySelector("#alertGanaste");
-
-const alertReglas = document.querySelector("#alertReglas");
-
-const mostrarPalabraCorrecta = document.querySelector("#palabraCorrecta");
-const mostrarPalabra = document.querySelector("#mostrarResultado");
 
 function cerrarVentana(idVentana) {
   modalAlertas.style.display = "none";

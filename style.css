@@ -228,7 +228,7 @@ p a{
     width: 425px;
     background: #f7f7f7;
     margin: auto;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -260,14 +260,14 @@ p a{
     
 }
 
-.alertRegla{
+#alertReglas{
     padding: 20px 16px;
     text-align: left;
 }
-.alertRegla button{
+#alertReglas button{
     width: 100%;
 }
-.alertRegla li{
+#alertReglas li{
     list-style: none;
     padding: 8px 0;
 }
@@ -304,7 +304,7 @@ p a{
         position: sticky;
         
     }
-    .alertRegla{
+    #alertReglas{
         padding: 20px 16px;
     }
 
