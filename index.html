@@ -21,6 +21,7 @@
         <section class="pantallaPrincipal" id="pantallaPrincipal">
             <button class="btones" type="button" onclick="mostrarSection('Juego')">Iniciar juego</button>
             <button class="btones btonSecundario" type="button" onclick="mostrarSection('Agregar')">Agregar nueva palabra</button>
+            <button class="btones btonSecundario" type="button" onclick="mostrarSection('Reglas')">Reglas</button>
         </section>
 
         <section class="pantallaAgregar" id="pantallaAgregar">
@@ -113,7 +114,7 @@
                 style="width:250px;height:250px">
             </lord-icon>
             <p><strong>Guardada!</strong></p>
-            <p>La palabra fue guardada con exito!</p>
+            <p>La palabra fue guardada con éxito!</p>
             <button type="button" onclick="guardarJugar('alertValida')">Aceptar</button>
         </div>
        <div class="alertVentana" id="alertPerdiste">
@@ -128,7 +129,7 @@
             <p id="palabraCorrecta"></p>
 
             <button type="button" onclick="guardarJugar('alertPerdiste')">Nuevo juego</button>
-            <button style="background: none;color: #0a3871;" type="button" onclick="volverMenu('alertPerdiste')">Menu Principal</button>
+            <button style="background: none;color: #0a3871;" type="button" onclick="volverMenu('alertPerdiste')">Menú Principal</button>
         </div>
        <div class="alertVentana" id="alertGanaste">
         
@@ -141,8 +142,19 @@
             <p><strong>Ganaste!</strong></p>
             <p id="mostrarResultado"></p>
             <button type="button" onclick="guardarJugar('alertGanaste')">Nuevo juego</button>
-            <button style="background: none;color: #0a3871;" type="button" onclick="volverMenu('alertGanaste')">Menu Principal</button>
+            <button style="background: none;color: #0a3871;" type="button" onclick="volverMenu('alertGanaste')">Menú Principal</button>
             
+        </div>
+        <div class="alertVentana alertRegla" id="alertReglas">
+            <p><strong>Reglas del juego</strong></p>
+            <ul>
+                <li>- Funciona solo con letras mayúsculas.</li>
+                <li>- No deben ser utilizadas letras con acentos ni caracteres especiales.</li>
+                <li>- Las palabras tienen como mínimo 3 letras, máximo 8 letras.</li>
+                <li>- En caso de acertar una letra, se colocará en el espacio correspondiente y la letra seleccionada se pintara de Verde.</li>
+                <li>- En caso de no acertar, comenzarás a dibujar el ahorcado (Total de 8 fallos), y la letra elegida se pintara de Rojo.</li>
+            </ul>
+            <button type="button" onclick="cerrarVentana('alertReglas')">Aceptar</button>
         </div>
     </div>
 

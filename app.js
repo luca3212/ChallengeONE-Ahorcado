@@ -23,6 +23,11 @@ function mostrarSection(section) {
       palabraRandom();
       break;
     }
+    case "Reglas": {
+      modalAlertas.style.display = "flex";
+      alertReglas.style.display = "block";
+      break;
+    }
   }
 }
 
@@ -98,6 +103,8 @@ const alertaError = document.querySelector("#alertError");
 const alertaValida = document.querySelector("#alertValida");
 const alertaPerdiste = document.querySelector("#alertPerdiste");
 const alertGanaste = document.querySelector("#alertGanaste");
+
+const alertReglas = document.querySelector("#alertReglas");
 
 const mostrarPalabraCorrecta = document.querySelector("#palabraCorrecta");
 const mostrarPalabra = document.querySelector("#mostrarResultado");
